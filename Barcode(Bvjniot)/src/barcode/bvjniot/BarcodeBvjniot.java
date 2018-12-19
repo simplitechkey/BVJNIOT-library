@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package barcode.bvjniot;
 
+package barcode.bvjniot;
 import com.aquafx_project.AquaFx;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -21,14 +21,14 @@ public class BarcodeBvjniot extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Library Login");
         stage.setMaximized(true);
         stage.setFullScreen(true);
+        stage.setResizable(false);
         stage.show();
-        
-
+        AquaFx.style();
     }
 
     /**
