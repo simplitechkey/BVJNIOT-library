@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barcode.bvjniot.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="531.0" fitWidth="527.0" layoutY="-12.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@loginpagelibrary.jpeg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="username" alignment="CENTER" layoutX="129.0" layoutY="121.0" prefHeight="38.0" prefWidth="258.0" promptText="Username" style="-fx-background-color: #ffffff;" />
+      <JFXPasswordField fx:id="password" alignment="CENTER" layoutX="129.0" layoutY="215.0" prefHeight="38.0" prefWidth="258.0" promptText="Password" style="-fx-background-color: #ffffff;" />
+      <JFXButton fx:id="login" alignment="TOP_CENTER" buttonType="RAISED" ellipsisString="" layoutX="126.0" layoutY="313.0" lineSpacing="2.0" onAction="#makeLogin" prefHeight="38.0" prefWidth="264.0" style="-fx-background-color: #FFCDD2#FFCDD2; -fx-background-radius: 100;" text="Login">
+         <textFill>
+            <RadialGradient centerX="0.38764044943820225" centerY="0.6057692307692307" cycleMethod="REPEAT" focusAngle="180.0" focusDistance="0.26190476190476186" radius="0.8809523809523809">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#da4d0b" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>
