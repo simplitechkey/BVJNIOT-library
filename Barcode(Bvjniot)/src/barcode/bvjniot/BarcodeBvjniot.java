@@ -5,7 +5,6 @@
  */
 
 package barcode.bvjniot;
-import com.aquafx_project.AquaFx;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -28,7 +27,7 @@ public class BarcodeBvjniot extends Application {
         stage.setFullScreen(true);
         stage.setResizable(false);
         stage.show();
-        AquaFx.style();
+        
     }
 
     /**
@@ -36,6 +35,7 @@ public class BarcodeBvjniot extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+               }
     }
     
-}
+
